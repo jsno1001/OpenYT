@@ -1,10 +1,10 @@
-const http = require("http");
+const express = require("express");
 
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {"content-type":"text/plain"});
-    if (req.url === "/") {
-        res.end("Hello OpenYT");
-    }
+const app = express();
+const port = 8080;
+
+app.get('/', (req, res) => {
+    res.send('<h1>Hello OpenYT</h1>');
 });
 
-server.listen(8080);
+app.listen(port, () => { console.log("Server started on http://localhost:"+port) });
