@@ -1,0 +1,24 @@
+{
+  "name": "openyt",
+  "version": "0.1.0",
+  "description": "OpenYT is open source media server",
+  "homepage": "https://github.com/jsno1001/OpenYT#readme",
+  "bugs": {
+    "url": "https://github.com/jsno1001/OpenYT/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsno1001/OpenYT.git"
+  },
+  "license": "GPL-3.0",
+  "author": "jsno1001",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+    
+  },
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
